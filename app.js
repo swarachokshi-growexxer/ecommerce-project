@@ -7,6 +7,10 @@ res.send('Welcome to the App');
 app.get('/api/users', (req, res) => {
 res.json({ users: [] });
 });
+
+app.get('/api/products', (req, res) => {
+res.json({ products: [] });
+});
 module.exports = app;
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
