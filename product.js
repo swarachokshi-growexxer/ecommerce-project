@@ -5,8 +5,12 @@ this.price = price;
 this.discount = 0;
 }
 getPrice() {
+<<<<<<< HEAD
 const tax = 0.18; // 18% tax
 return this.price + (this.price * tax);
+=======
+return this.price - (this.price * this.discount / 100);
+>>>>>>> 31932c1 (Add discount calculation)
 }
 }
 module.exports = Product;
